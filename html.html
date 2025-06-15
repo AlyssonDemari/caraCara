@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container-cards">
+        <div class="container-cards__card">
+            <img src="images/alexandre.jpeg" alt="">
+            <h1>alexandre</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/alysson.jpeg" alt="">
+            <h1>alysson</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/ana.jpeg" alt="">
+            <h1>Ana</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/arthur.jpeg" alt="">
+            <h1>Arthur</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/carol.jpeg" alt="">
+            <h1>Carol</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/clairton.jpeg" alt="">
+            <h1>Clairton</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/dani.jpeg" alt="">
+            <h1>Dani</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/duda.jpeg" alt="">
+            <h1>Duda</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/fatima.jpeg" alt="">
+            <h1>Fatima</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/gessica.jpeg" alt="">
+            <h1>Jessica</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/japa.png" alt="">
+            <h1>Asiatico</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/kalleb.jpeg" alt="">
+            <h1>Kalleb</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/karol.jpeg" alt="">
+            <h1>Karol</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/laura.jpeg" alt="">
+            <h1>Laura</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/milena.jpeg" alt="">
+            <h1>milena</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/paula.jpeg" alt="">
+            <h1>Paula</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/ramiro.jpeg" alt="">
+            <h1>Ramiro</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/suelem.jpeg" alt="">
+            <h1>Suelem</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/vit.jpeg" alt="">
+            <h1>Vitória</h1>
+        </div>
+        <div class="container-cards__card">
+            <img src="images/wesley.png" alt="">
+            <h1>Wesley</h1>
+        </div>
+    </section>
+
+    <script>
+        const cards = document.querySelectorAll(".container-cards__card");
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                cards.forEach(c => {
+                    card.classList.add('active'); // adiciona a classe 'active' apenas ao clicado
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
